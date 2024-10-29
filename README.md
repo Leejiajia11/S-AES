@@ -2,7 +2,8 @@
 
 ## 项目介绍
 本项目利用C++/Qt，根据S-AES算法编写和调试程序，提供GUI解密支持用户交互。输入可以是16bit的数据和16bit的密钥，输出是16bit的密文。加密算法使用4个不同的函数或变换：密钥加（Ax）、半字节代替（NS）、行移位（SR）和列混淆（MC），具体流程如下图。
-![加密流程图](images/S-ASE.png) 
+![加密流程图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/S-ASE.png) 
+
 
 ## 代码结构
 项目代码结构按如下组织：
@@ -37,7 +38,7 @@ S-AES/
 6. **解密后的明文显示框**：显示解密后的明文。
 
 #### 功能演示（如图）
-![加密界面图](images/encrypt1.png) 
+![加密界面图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/encrypt1.png) 
 
 ---
 
@@ -62,7 +63,7 @@ S-AES/
 1. 各自对输入的明文进行S-AES加密。
 2. 显示各自加密后的密文。
 
-![交叉测试图](images/test.png) 
+![交叉测试图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/test.png) 
 
 
 
@@ -90,7 +91,7 @@ S-AES/
 2. 使用S-AES算法逐块加密明文。
 3. 显示加密后的密文（可能是乱码）。
 
-![扩展功能图](images/ASCII.png) 
+![扩展功能图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/ASCII.png) 
 
 ---
 
@@ -98,12 +99,14 @@ S-AES/
 
 #### 项目内容与功能演示（如图）
 - **双重加密**：将S-AES算法通过双重加密进行扩展，分组长度仍然是16 bits，但密钥长度为32 bits。
-  ![双重加密图](images/encrypt2.png) 
+  ![双重加密图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/encrypt2.png)
+  
 - **三重加密**：采用32 bits密钥的模式进行三重加密解密。
-  ![三重加密图](images/encrypt3.png)
+  ![三重加密图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/encrypt3.png)
+  
 - **中间相遇攻击**：利用已知的明文和密文对，尝试破解双重加密密钥。
  
-  ![中间相遇攻击图](images/attack.png) 
+  ![中间相遇攻击图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/attack.png) 
 
 ---
 
@@ -111,7 +114,7 @@ S-AES/
 
 本关展示如何使用基于 **S-AES 算法**的 **密码分组链接 (CBC)** 模式对较长的明文消息进行加密与解密，并探索密文篡改对解密结果的影响。程序随机生成一个 16 位的二进制初始向量 (IV)，在 CBC 模式下将超过 16 位的密文进行分组加密，同时演示如何在解密时正确处理密文篡改。
 
-![CBC 加密流程图](images/CBCmode.png) 
+![CBC 加密流程图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/CBCmode.png) 
 
 
 ### 项目内容与特性
@@ -146,12 +149,12 @@ S-AES/
 1. 系统按 CBC 模式逐块解密密文。
 2. 显示还原的明文结果。
 
-![解密界面示例](images/cbc2.png) 
+![解密界面示例](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/cbc2.png) 
 
 ### 3. 篡改密文实验
 用户可以通过点击按钮篡改密文分组，并查看解密后的变化。
 
-![篡改密文界面示例](images/cbc3.png) 
+![篡改密文界面示例](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/cbc3.png) 
 
 
 
