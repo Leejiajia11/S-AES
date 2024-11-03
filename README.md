@@ -64,9 +64,13 @@ S-AES/
 2. 显示各自加密后的密文。
 与其他组进行交叉测试，以证明满足算法标准，选择密文为0110111101101011，密钥为1010011100111011，得到密文结果0000011100111000，两组同学编写的程序对明文P进行加密得到相同的密文C。
 
-其他组：
-![交叉测试图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/test.png) 
-本组：
+- 其他组：
+
+![交叉测试图](./images/test.png) 
+
+
+- 本组：
+
 ![交叉测试图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/test1.png) 
 
 
