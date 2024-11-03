@@ -66,7 +66,7 @@ S-AES/
 
 - 其他组：
 
-![交叉测试图](./images/test.png) 
+![交叉测试图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/test.png) 
 
 
 - 本组：
