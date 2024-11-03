@@ -116,6 +116,11 @@ S-AES/
  
   ![中间相遇攻击图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/attack.png) 
 
+1. 输入明文和对应的密文对，以及使用的加密算法（如双重加密的 S-AES），并设置所需的密钥组合（如𝐾1K1和𝐾2K2的长度）。
+ ![中间相遇攻击图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/attack1.png) 
+2. 系统将尝试使用中间相遇攻击方法推测密钥，通过两个加密阶段的结果匹配来找到可能的密钥组合。
+ ![中间相遇攻击图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/attack2.png)
+ ![中间相遇攻击图](https://cdn.jsdelivr.net/gh/Leejiajia11/S-AES@main/images/attack3.png) 
 ---
 
 ## 第5关：工作模式基于 S-AES 算法的 CBC 加密与篡改密文实验
